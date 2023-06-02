@@ -1,0 +1,221 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\MediCare\\backend\\contracts\\AddressArrayUtils.sol": {
+      "lastModificationDate": 1685308668357,
+      "contentHash": "baaf83fac218897134834301fcb24ac6",
+      "sourceName": "contracts/AddressArrayUtils.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AddressArrayUtils"
+      ]
+    },
+    "E:\\MediCare\\backend\\contracts\\Contract.sol": {
+      "lastModificationDate": 1685308668357,
+      "contentHash": "b55b26412e0f6852287809f2ff3450d0",
+      "sourceName": "contracts/Contract.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Roles.sol",
+        "./AddressArrayUtils.sol",
+        "./AddToBoolMapping.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Contract"
+      ]
+    },
+    "E:\\MediCare\\backend\\contracts\\Roles.sol": {
+      "lastModificationDate": 1685308668372,
+      "contentHash": "685f6d0f9925dcfee1b0192e3c33cb0d",
+      "sourceName": "contracts/Roles.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AddToStrMapping.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Roles"
+      ]
+    },
+    "E:\\MediCare\\backend\\contracts\\AddToBoolMapping.sol": {
+      "lastModificationDate": 1685308668357,
+      "contentHash": "a6a10321dd2615310cd5ffa21ebd1b9e",
+      "sourceName": "contracts/AddToBoolMapping.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AddToBoolMapping"
+      ]
+    },
+    "E:\\MediCare\\backend\\contracts\\AddToStrMapping.sol": {
+      "lastModificationDate": 1685308668357,
+      "contentHash": "f46e928f08a07a1e4990c2ca1105ee03",
+      "sourceName": "contracts/AddToStrMapping.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AddToStrMapping"
+      ]
+    }
+  }
+}

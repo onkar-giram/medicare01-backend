@@ -1,0 +1,375 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/AddToBoolMapping.sol:AddToBoolMapping": {
+        "src": "contracts\\AddToBoolMapping.sol:4",
+        "version": {
+          "withMetadata": "2b035e43c627466f769d9a0d4615171845e3e28720e15aeb580617f33db77b13",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/AddToStrMapping.sol:AddToStrMapping": {
+        "src": "contracts\\AddToStrMapping.sol:4",
+        "version": {
+          "withMetadata": "a263b2b333ee084d83e681cbc8ba5932943564b6ca46638dfc0d73b89b888461",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/AddressArrayUtils.sol:AddressArrayUtils": {
+        "src": "contracts\\AddressArrayUtils.sol:4",
+        "version": {
+          "withMetadata": "0788d150922922746ff2c0f9ac8c732b42ddce877ce78162a333a56adfae4f37",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Contract.sol:Contract": {
+        "src": "contracts\\Contract.sol:14",
+        "version": {
+          "withMetadata": "5497a8d6cfdd4d570eb50d23ecebbddb4c4649cc665ce0b0b0e9fa7ad32f15e7",
+          "withoutMetadata": "0a7f2e6e123ff09a1916ed2d83f5e2a2f18b82b463c8a93405e30cee940a5f08",
+          "linkedWithoutMetadata": "0a7f2e6e123ff09a1916ed2d83f5e2a2f18b82b463c8a93405e30cee940a5f08"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/Roles.sol:Roles",
+          "contracts/AddToBoolMapping.sol:AddToBoolMapping",
+          "contracts/AddressArrayUtils.sol:AddressArrayUtils"
+        ],
+        "methods": [
+          "initialize()",
+          "isAdmin(address)",
+          "getAdmin()",
+          "setAdminPubKey(string)",
+          "getAdminPubKey()",
+          "isDrRegistered(address)",
+          "isDrPending(address)",
+          "isDoctor(address)",
+          "registerDr(string)",
+          "approveDr(address)",
+          "disapproveDr(address)",
+          "registerDrConfirm(string)",
+          "setDrHash(string)",
+          "getDrHash(address)",
+          "getDrPubKey(address)",
+          "getAllDrs()",
+          "getPendingDrs()",
+          "getPtsOfDr()",
+          "isPatient(address)",
+          "registerPt(string,string)",
+          "setPtGeneralHash(string)",
+          "getPtGeneralHash(address)",
+          "setPtRecordHash(address,string)",
+          "getPtRecordHash(address)",
+          "getAllPts()",
+          "changeEditorAccess(address,string,string)",
+          "removeEditorAccess(string,string)",
+          "getDrOfPt()",
+          "grantViewerAccess(address)",
+          "revokeViewerAccess(address)",
+          "getPatViewers()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "admin",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_struct(Admin)550_storage",
+              "contract": "Contract",
+              "src": "contracts\\Contract.sol:44"
+            },
+            {
+              "label": "doctors",
+              "offset": 0,
+              "slot": "5",
+              "type": "t_struct(Doctors)572_storage",
+              "contract": "Contract",
+              "src": "contracts\\Contract.sol:45"
+            },
+            {
+              "label": "patients",
+              "offset": 0,
+              "slot": "11",
+              "type": "t_struct(Patients)559_storage",
+              "contract": "Contract",
+              "src": "contracts\\Contract.sol:46"
+            },
+            {
+              "label": "initialized",
+              "offset": 0,
+              "slot": "16",
+              "type": "t_bool",
+              "contract": "Contract",
+              "src": "contracts\\Contract.sol:53"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_string_storage)": {
+              "label": "mapping(address => string)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(Map)13_storage)": {
+              "label": "mapping(address => struct AddToBoolMapping.Map)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_struct(MedicalRecord)542_storage)": {
+              "label": "mapping(address => struct Contract.MedicalRecord)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)",
+              "numberOfBytes": "32"
+            },
+            "t_string_storage": {
+              "label": "string",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Admin)550_storage": {
+              "label": "struct Contract.Admin",
+              "members": [
+                {
+                  "label": "user",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "public_key",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "pending_doctors",
+                  "type": "t_struct(Map)13_storage",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Doctors)572_storage": {
+              "label": "struct Contract.Doctors",
+              "members": [
+                {
+                  "label": "users",
+                  "type": "t_struct(Role)1516_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "public_keys",
+                  "type": "t_mapping(t_address,t_string_storage)",
+                  "offset": 0,
+                  "slot": "4"
+                },
+                {
+                  "label": "docToPatAccess",
+                  "type": "t_mapping(t_address,t_struct(Map)13_storage)",
+                  "offset": 0,
+                  "slot": "5"
+                }
+              ],
+              "numberOfBytes": "192"
+            },
+            "t_struct(Map)13_storage": {
+              "label": "struct AddToBoolMapping.Map",
+              "members": [
+                {
+                  "label": "keys",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "values",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "indexOf",
+                  "type": "t_mapping(t_address,t_uint256)",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_struct(Map)204_storage": {
+              "label": "struct AddToStrMapping.Map",
+              "members": [
+                {
+                  "label": "keys",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "values",
+                  "type": "t_mapping(t_address,t_string_storage)",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "indexOf",
+                  "type": "t_mapping(t_address,t_uint256)",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "inserted",
+                  "type": "t_mapping(t_address,t_bool)",
+                  "offset": 0,
+                  "slot": "3"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_struct(MedicalRecord)542_storage": {
+              "label": "struct Contract.MedicalRecord",
+              "members": [
+                {
+                  "label": "editor",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "viewers",
+                  "type": "t_array(t_address)dyn_storage",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "key_data_hash",
+                  "type": "t_string_storage",
+                  "offset": 0,
+                  "slot": "2"
+                }
+              ],
+              "numberOfBytes": "96"
+            },
+            "t_struct(Patients)559_storage": {
+              "label": "struct Contract.Patients",
+              "members": [
+                {
+                  "label": "users",
+                  "type": "t_struct(Role)1516_storage",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "records",
+                  "type": "t_mapping(t_address,t_struct(MedicalRecord)542_storage)",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_struct(Role)1516_storage": {
+              "label": "struct Roles.Role",
+              "members": [
+                {
+                  "label": "bearer",
+                  "type": "t_struct(Map)204_storage",
+                  "offset": 0,
+                  "slot": "0"
+                }
+              ],
+              "numberOfBytes": "128"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Roles.sol:Roles": {
+        "src": "contracts\\Roles.sol:6",
+        "version": {
+          "withMetadata": "ea6c29fe3db0bd4a90a7ae1a835d8b22acb74d57ce32dc2cbdd3a8e42eca157d",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "contracts/AddToStrMapping.sol:AddToStrMapping"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      }
+    }
+  ]
+}
